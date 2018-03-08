@@ -239,6 +239,8 @@ class InheritanceQuerySetMixin(object):
         levels = None
         if django.VERSION < (1, 6, 0):
             levels = 1
+        # Hardcode levels = 1 for now as the logic relies heavily on this.
+        levels = 1
         return levels
 
 
